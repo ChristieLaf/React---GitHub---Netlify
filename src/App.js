@@ -1,21 +1,18 @@
-import React from "react";
-import Weather from "./Weather.js";
-import "./App.css";
-import WeatherSearch from "./WeatherSearch.js";
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import Navigation from "./Navigation";
+import Main from "./Main";
+import Weather from "./Weather";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello from React</h1>
-        <Weather />
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navigation />
+        <Main />
+      </div>
+    );
+  }
 }
 
-export default App;
-
-<a href="WeatherSearch.js" target="_blank" rel="noopenner noreferrer">
-  <WeatherSearch />
-</a>;
+<Weather />;
