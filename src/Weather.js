@@ -15,7 +15,7 @@ export default class Weather extends Component {
   };
 
   state = {
-    city: this.props.city,
+    city: this.props.city.value,
   };
 
   componentWillMount() {

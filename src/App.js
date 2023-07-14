@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Navigation from "./Navigation";
 import Main from "./Main";
-import Weather from "./Weather";
 
 export default class App extends Component {
   render() {
@@ -14,5 +13,3 @@ export default class App extends Component {
     );
   }
 }
-
-<Weather />;
